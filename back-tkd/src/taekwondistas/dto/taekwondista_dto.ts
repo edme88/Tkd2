@@ -37,7 +37,7 @@ export class TaekwondistaDTO{
     @ApiProperty({description: "Apellido del Cotacto de Emergencia"})
     lastnameEmergency: string;
     @ApiProperty({description: "Vínculo del Cotacto de Emergencia"})
-    relationship: string;
+    relationshipEmergency: string;
     @ApiProperty({description: "Número de Celular del Cotacto de Emergencia"})
-    cellphone: number;
+    cellphoneEmergency: number;
 }

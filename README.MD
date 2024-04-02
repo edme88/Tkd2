@@ -24,4 +24,15 @@ config service
 Inyectar servicios en el constructor
 
 ### UI Ejemplo
+
 https://edme88.github.io/Tkd/nuevoTkd.html
+
+## Definiciones Básicas
+
+###
+
+### DTO
+
+DTO significa "Data Transfer Object" (Objeto de Transferencia de Datos). Es un patrón de diseño utilizado comúnmente en el desarrollo de software para encapsular un conjunto de datos y transferirlo entre subsistemas de una aplicación. En el contexto de una aplicación web o de servicios, un DTO se utiliza para transferir datos entre el cliente y el servidor, o entre diferentes capas de la aplicación.
+
+Un DTO proporciona una forma estructurada y coherente de transferir datos específicos entre diferentes partes de una aplicación, lo que ayuda a mantener un acoplamiento bajo y una separación clara de responsabilidades entre los distintos componentes del sistema.
