@@ -1,7 +1,8 @@
 import { Body, Controller, Get, Post } from '@nestjs/common';
-import { ApiOperation, ApiResponse } from '@nestjs/swagger';
+import { ApiOperation, ApiResponse, ApiTags } from '@nestjs/swagger';
 import { DojanDTO } from './dto/dojan_dto';
 
+@ApiTags('Dojans')
 @Controller('dojans')
 export class DojansController {
     /*

@@ -1,7 +1,9 @@
 import { Body, Controller, Get, Post } from '@nestjs/common';
-import { ApiOperation, ApiResponse } from '@nestjs/swagger';
+import { ApiOperation, ApiResponse, ApiTags } from '@nestjs/swagger';
 import { ExamDTO } from './dto/exam_dto';
 
+
+@ApiTags('Exams')
 @Controller('exams')
 export class ExamsController {
     /*
