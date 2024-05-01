@@ -22,4 +22,6 @@ export class UserController {
     getUsers(){
         return this.service.getAll();
     }
+
+    /*POST PUT DELETE */
 }
