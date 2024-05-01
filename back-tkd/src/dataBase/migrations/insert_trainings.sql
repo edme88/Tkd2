@@ -1,13 +1,13 @@
 INSERT INTO TRAININGS (
     NAME,
     DESCRIPTION,
-    DATE DATE,
+    DATE,
     HOURS,
     ADDRESS,
     CITY,
     PROVINCE,
     COST,
-    RESTRICTION,
+    RESTRICTION
 ) VALUES (
     'Arbitros y Jueces',
     'Capacitación para jueces y árbitros internationales',

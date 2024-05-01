@@ -3,11 +3,11 @@ INSERT INTO EXAMS (
     HOURS,
     SABOM,
     ADDRESS,
-    COST,
+    COST
 ) VALUES (
     '20/08/2024',
     '10:00',
     'Maxi Pedro',
     'Maestro Vidal 331',
-    '10000',
+    '10000'
 );
