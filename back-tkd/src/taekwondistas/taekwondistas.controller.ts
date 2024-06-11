@@ -1,5 +1,5 @@
-import { Body, Controller, Get, Post } from '@nestjs/common';
-import { ApiOperation, ApiResponse, ApiTags } from '@nestjs/swagger';
+import { Body, Controller, Get, Post, Headers } from '@nestjs/common';
+import { ApiOperation, ApiResponse, ApiTags, ApiBody, ApiHeader } from '@nestjs/swagger';
 import { TaekwondistaDTO } from './dto/taekwondista_dto';
 
 
@@ -18,5 +18,20 @@ export class TaekwondistasController {
     })
     getTaekwondistas(){
         return "Taekwndista1"
+    }
+
+    /*POST*/
+    @Post()
+    @ApiHeader({
+        name: 'nombre',
+        description: 'Nombre del Taekwondista',
+        required: true
+    })
+    @ApiBody({})
+    //@ApiCreatedResponse
+    //@ApiBadRequestResponse
+    //@ApiInternalServerErrorResponse
+    createTaekwondista(@Headers('name') name, @Body() body){
+        return `Se ejecuto un POST con el ${name} y ${body}`;
     }
 }
