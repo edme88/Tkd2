@@ -55,6 +55,7 @@ export class UserService {
             return {"autenticated": false, "msg": "El usuario NO existe"};
         }
         
+        //La librería compara la pass no hasheada con una pass hasheada
         if(bcrypt.compareSync(password, userData.password)){
             return {"autenticated": true, "msg": "El usuario se logueo exitosamente"};
         }else{

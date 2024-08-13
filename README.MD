@@ -8,9 +8,10 @@
    `npm install --save @nestjs/typeorm typeorm mysql2`
 
 3. Inicializar el proyecto
+   (moverse a la carpeta de back antes)
    `npm run start:dev`
 
-4. En el navegador ingresar a http://localhost:3000/dojans
+4. En el navegador ingresar a http://localhost:3000/api#
 
 ### Documentación
 
@@ -43,21 +44,23 @@ https://jamboard.google.com/d/138X712TOMtuhQqN-3UTIEj2z1cYfXRTKWNWH1qBKZrY/edit?
 
 `nest generate service user`
 
-
-
 # Proyecto
 
 ## Estructura del Proyecto
+
 Documentar!!!
-
-
 
 SIguientes pasos:
 [x] Crear la BD
 Conexión de TypeORM a la BD (migración de TypeORM????)
 [x] Crear el repository ()
+[x] Agregar más datos al usuario (DTO)
+[x] Hasheo de contraseña para el usuario
+[x] Formato de la respuesta para el usuario
+[ ] CRUD para taekwondistas, tournaments, training, exams
 
 Scripts para drop table, create table e insert data
 
-Diseño de las relaciones en las tablas 
+Diseño de las relaciones en las tablas
 
+https://jamboard.google.com/d/1sud_lblkJtp9ACb7waVKNMXmcf5RcX1liVaSFW14VJU/viewer?f=0
