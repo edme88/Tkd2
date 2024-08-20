@@ -1,7 +1,9 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Revalia&family=Roboto&display=swap'); */
+
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
-  --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
+  --font-mono: ui-monospace, Menlo, Monaco, "Revalia", "Segoe UI Mono",
     "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
     "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
 
@@ -87,12 +89,19 @@ body {
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  text-align: center;
+  background-image: url('../../public/fondoTKD.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+fieldset {
+  background-color: rgba(256,256,256,0.9);
+}
+
+legend {
+  background-color: rgba(256,256,256,0.9);
 }
 
 a {
@@ -100,8 +109,26 @@ a {
   text-decoration: none;
 }
 
+h1 {
+  font-family: 'Revalia', cursive;
+  font-size: 3em;
+  text-align: center;
+  text-shadow: 2px 2px 5px #a09608;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
+}
+
+.formTkd{
+  position: absolute;
+  margin: 2em;
+  right: 20px;
+  width: 60%;
+}
+
+input{
+  margin: 0.2em;
 }

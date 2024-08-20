@@ -6,8 +6,17 @@ export default function Info() {
 
 const [users, setUsers] = useState([]);
 
+//Componente 3 estados:
+//se monta
+//se modifica
+//se elimina
+//un useEffect es como un "eventListener" del estado de un componente (HOOKS)
+//Hooks-> useState or useEffect or useContext
+
+
 useEffect(() => {
-  getUser()
+  getUser();
+  return ()=> {console.log("Adios deslogueado")}
 }, []);
 
   const inscribirse = () => {
